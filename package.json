@@ -3,11 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.5",
+    "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "react-scripts": "1.0.7"
+    "nib": "^1.1.2",
+    "react-scripts": "1.0.7",
+    "stylus": "^0.54.5"
   },
   "scripts": {
     "start": "react-scripts start",
