@@ -1,0 +1,185 @@
+$aside = #233f5d
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import 'nib'
+
+body
+  margin 0
+  padding 0
+  font-family: 'Raleway', sans-serif;
+header
+  .wrapper
+    margin 0
+    padding 0
+    max-width 100%
+    position relative
+    .content-wrapper
+      float right
+      width 100%
+.sidebar
+  box-shadow 4px 0px 5px -2px rgba(94,94,94,0.81)
+  text-align center
+  position fixed
+  width 420px
+  margin-right -320px
+  float left
+  color white !important
+  height 100%
+  background-image linear-gradient(to top,rgb(22, 135, 237) 0%,rgb(20, 55, 90) 100%)
+  .bio
+    position absolute
+    top 25%
+    left 5%
+    width 90%
+    display block
+    margin 0 auto
+    .title
+      h1
+        font-weight 700
+        margin-bottom 0px
+        text-transform uppercase;
+        font-size 28px
+      h2
+        font-size 20px
+        margin 0px 0px 30px 0px
+        font-weight 300
+        letter-spacing 1.6px
+    .avatar
+      img
+        width 140px
+        border-radius 50%
+        border 1px solid rgba(255,255,255,0.2)
+        box-shadow:0 0 20px rgba(255,255,255,0.3)
+    .desc
+      width 85%
+      display block
+      margin 0 auto
+      p
+        font-size 15px
+        font-weight 300
+        color #f2f2f2
+    .social
+      margin-top: 30px
+      a
+        color rgba(255,255,255,0.7)
+        transition: all 0.2s linear
+        &:hover, &:focus
+          color rgba(255,255,255,1)
+
+      i
+        font-size 28px
+      ul
+        list-style none
+        margin 0
+        padding 0
+        li
+          display inline-block
+          margin-right 5px
+
+.content
+  padding 30px 0 0 60px
+  position relative
+  margin-left 420px
+  clear both
+  overflow auto
+  color #777
+  .title
+    padding-bottom 20px
+    i
+      float left
+      color $aside
+      font-size 26px
+      margin-right 15px
+    h2
+      color #555
+    .item
+      margin-bottom 30px
+      h3
+        color #777
+        margin-bottom 5px
+      span
+        color rgba($aside,0.9)
+        font-weight 300
+      p
+        margin-top 0px
+        width 95%
+        letter-spacing 1.1px
+        line-height 25px
+    .w33
+      width 30%
+      display inline-block;
+
+.skills
+  height 10px
+  position relative;
+  background $aside
+  border-radius 50px
+  padding 6px
+  width 90%
+  margin-top 10px
+  span
+    display block
+    height 100%
+    border-top-right-radius 8px
+    border-bottom-right-radius 8px
+    border-top-left-radius 20px
+    border-bottom-left-radius 20px
+    background-color rgb(22, 135, 237)
+    overflow: hidden
+    position: relative
+    box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4)
+    &:after
+      content ""
+      position: absolute
+      top 0
+      left 0
+      bottom 0
+      right 0
+      background-image linear-gradient(-45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent );
+      z-index 1
+      background-size 50px 50px
+      animation move 4s linear infinite
+      overflow hidden
+
+		@-webkit-keyframes move
+	    0%
+	       background-position 0 0
+	    100%
+	       background-position 50px 50px
+
+		@-moz-keyframes move
+	    0%
+	       background-position 0 0
+	    100%
+	       background-position 50px 50px
+
+@media only screen and (max-width: 768px)
+  .sidebar
+    box-shadow none
+    padding-top 60px
+    padding-bottom 60px
+    margin-right 0
+    width 100%
+    position relative
+    .bio
+      position relative
+      top 0%
+      left 0%
+  .content
+    margin-left 0
+    position relative
+    padding 20px
+    .title
+      .item
+        h3
+          span
+            display block
+        p
+          width: 100%
+          text-align justify
+      .skills
+        width 100%
+        margin-top 0px
+      .w33
+        width 95%
+        display inline-block
