@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import About from './components/About';
-import Social from './components/Social';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Certificate from './components/Certificate';
@@ -16,8 +15,10 @@ class App extends Component {
       bio: '❤ Front end Developer - Growth Hacker at @CityDrive, CSS Lover, Geek & Blogger. Better known as The Grumpy Developer.',
       address: 'Guadalajara, Jalisco México.',
       social: [
-        {name: 'facebook', url: 'http://url'},
-        {name: 'twitter', url: 'http://url2'}
+        {name: 'facebook', url: 'https://facebook.com/oscarbarajastavares'},
+        {name: 'twitter', url: 'https://twitter.com/gndx'},
+        {name: 'github', url: 'https://github.com/gndx'},
+        {name: 'linkedin', url: 'https://www.linkedin.com/in/oscarbarajas/'}
       ],
       experience: [
         {jobTitle: 'FrontEnd', company: 'CityDrive', startDate: 'Jan 2016', endDate: 'Present', jobDescription: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.'},
@@ -48,8 +49,8 @@ class App extends Component {
               name={person.name}
               profession={person.profession}
               bio={person.bio}
-              address={person.address} />
-            <Social social={person.social} />
+              address={person.address}
+              social={person.social} />
           </div>
 
           <div className='content-wrapper'>

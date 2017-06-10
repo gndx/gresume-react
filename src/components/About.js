@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Social from './Social';
 
-const About = ({avatar, name, profession, bio, address, }) => {
+const About = ({avatar, name, profession, bio, address, social}) => {
   return(
     <div className='bio'>
       <div className='avatar'>
@@ -17,6 +18,7 @@ const About = ({avatar, name, profession, bio, address, }) => {
       <div className='address'>
         <p>{address}</p>
       </div>
+      <Social social={social} />
     </div>
   );
 };
@@ -26,7 +28,8 @@ About.PropTypes = {
   name: PropTypes.string,
   profession: PropTypes.string,
   bio: PropTypes.string,
-  address: PropTypes.string
+  address: PropTypes.string,
+  social: PropTypes.node
 };
 
 export default About;
