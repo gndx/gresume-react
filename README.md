@@ -5,10 +5,13 @@ GResume is a HTML free template to create a minimalist professional resume. Made
 
 ![gresume](https://raw.githubusercontent.com/gndx/GResume/master/screenshot.png)
 
+*  Click here to use the [Live Demo](http://dev.gndx.co/gresume-react/)
+
+
 
 ### Install Dependencies
 ```
-npm istall
+npm install
 ```
 
 ### Compile Stylus (CSS)
